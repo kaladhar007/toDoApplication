@@ -1,0 +1,23 @@
+//GET list of All todos status='TO DO' API(1)
+GET http://localhost:3000/todos/?status=TO%20DO
+###
+//GET one todo by ID API(2)
+GET http://localhost:3000/todos/10/
+###
+//Add todo  API(3) ( Todo Successfully Added )
+POST http://localhost:3000/todos/
+
+{
+    "id":10,
+    "todo":"successfully completed",
+    "priority":"HIGH",
+    "status":"DONE"
+}
+###
+//Update todos status by todo ID API(4) ( Status Updated )
+
+PUT http://localhost:3000/todos/11/
+
+
+// Delete todo by todo ID API(5) ( Todo Deleted )
+DELETE http://localhost:3000/todos/11/
